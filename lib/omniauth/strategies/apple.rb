@@ -12,8 +12,8 @@ module OmniAuth
              authorize_url: '/auth/authorize',
              token_url: '/auth/token'
       option :authorize_params,
-             response_mode: 'fragment',
-            #  response_type: 'code+id_token'
+             response_mode: 'fragment'
+      #  response_type: 'code+id_token'
 
       uid { id_info['sub'] }
 
